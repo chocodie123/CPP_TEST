@@ -129,6 +129,10 @@
   <ItemGroup>
     <ClCompile Include="TextCpp.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="io.h" />
+    <ClInclude Include="Upfunc.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

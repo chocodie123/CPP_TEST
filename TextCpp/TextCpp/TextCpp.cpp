@@ -1,20 +1,49 @@
-// TextCpp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include "io.h"
+#include "UpFunc.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	// cout << "HellO 새싹!\n";
+	//problem();
+	problem2();
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void problem() {
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	int N;
+	cout << "정수의 갯수를 입력하세요\n";
+	cin >> N;
+	int* Array = new int[N];
+	for (int i = 0; i < N; ++i) {
+		cout << "정수를 입력해주세요. cout=" << i + 1 << "\n";
+		cin >> Array[i];
+	}
+
+	int lower = Array[0];
+	int higher = Array[0];
+	for (int i = 1; i < N; ++i) {
+		if (Array[i] < lower) {
+			lower = Array[i];
+		}
+		if (Array[i] > higher) {
+			higher = Array[i];
+		}
+
+	}
+	cout << lower << " " << higher;
+	delete[] Array;
+}
+
+void problem2() {
+
+	int N;
+	cout << " 바구니 갯수 입력";
+	cin >> N;
+	int* Array = new int[N];
+	for (int i = 0; i < N; i++) {
+		Array[i] = i + 1;
+		cout << Array[i];
+	}
+
+	delete[] Array;
+}
