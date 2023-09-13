@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CH08_Pointer.cpp" />
+    <ClCompile Include="problem.cpp" />
     <ClCompile Include="TextCpp.cpp" />
   </ItemGroup>
   <ItemGroup>
